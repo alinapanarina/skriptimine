@@ -1,0 +1,8 @@
+#! /bin/bash
+#
+# endaskript
+#
+echo -n "pinginaaber istub paremal," #väljasta ilma reavahetusteta Pinginaaber
+echo -n "tema nimi chris." # Väljasta ! ja tee reavahetus
+#
+# Skripti lõpp
