@@ -1,0 +1,5 @@
+
+ #! /bin/bash
+#skripti algus
+echo `hostname` "at" ` date +"%H:%M:%S"`' `uptime -p`'
+#skripti lõpp
