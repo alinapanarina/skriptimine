@@ -1,0 +1,16 @@
+#!/bin/bash
+#skripti algus
+
+echo -n "Sisesta a külg: "
+read a
+
+echo -n "Sisesta b külg: "
+read b 
+
+echo -n "Sisesta c külg: "
+read c
+
+p=$( echo "scale=2;($a+$b+$c)/2" | bc )
+pindala=`echo "scale=2;sqrt( $p * ($p - $a ) * ( $p - $b ) * ($p - $c))" | bc`
+echo "Pindala on $pindala"
+ 
