@@ -1,0 +1,20 @@
+#!/bin/bash
+#skripti algus
+
+echo -n "Mis on A külje pikkus cm-tes? "
+read A
+
+echo -n "Mis on B külje pikkus cm-tes? "
+read B
+
+#Külgede arvutamine
+
+A=$(echo "scale=2;($A^2)" | bc)
+B=$(echo "scale=2;($B^2)" | bc)
+
+sum=$(echo "scale=2;($A+$B)" | bc)
+kylg_c=$(echo "scale=2;sqrt ($sum)" | bc )
+
+echo "Külje C pikkus on $kylg_c cm."
+
+#Skripti lõpp
