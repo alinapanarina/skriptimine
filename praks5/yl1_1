@@ -1,0 +1,17 @@
+#!/bin/bash
+#skripti algus
+
+echo -n "Mis on A külje pikkus cm-tes? " #sisesta A külg
+read A
+
+echo -n "Mis on B külje pikkus cm-tes? " #sisesta B külg
+read B
+
+a_ruut=`echo "scale=2;($A^2)" | bc` #külje a väärtus ruudus
+b_ruut=`echo "scale=2;($B^2)" | bc` #külje b väärtus ruudus
+c_ruut=`echo "scale=2;($a_ruut+$b_ruut)" | bc` #külje c väärus ruudus
+c=`echo "scale=2;sqrt ($c_ruut)" | bc`
+
+echo "C külg on $c."
+
+#Skripti lõpp
