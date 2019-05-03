@@ -1,0 +1,10 @@
+#!/bin/bash
+echo -n "Sisestage ringi raadius: "
+read r
+area=$(echo "scale=2;3.14 * ($r * $r)" | bc) #Arvutab ringi ümbermõõdu
+
+d=$(echo "scale=2;2 * $r"|bc)
+circumference=$(echo "scale=2;3.14 * $d" | bc) #Arvutab ringi pindala
+
+echo "Ringi ümbermõõt on $area"
+echo "Ringi pindala on $circumference"
