@@ -1,0 +1,21 @@
+#!/bin/bash
+#skripti algus
+echo "esmaspäev = 0"
+echo "teisipäev = 1"
+echo "kolmapäev = 2"
+echo "neljapäev = 3"
+echo "reede = 4"
+echo "laupäev = 5"
+echo "pühapäev = 6"
+
+echo -n "Kuna reisile lähete? (mis päeval) "
+read reisi_algus
+
+echo -n "kaua reisil olete? (mitu päeva) "
+read paevad
+
+#päevade kalkulatsioon
+
+veel_reisi_paevad=$(( $paevad % 7 ))
+tagasi=$(( $reisi_algus + $veel_reisi_paevad ))
+echo "Tagasi olete päeval $tagasi "
