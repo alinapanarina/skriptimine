@@ -1,0 +1,9 @@
+#!/bin/bash
+
+ls /home/user/skriptimine/test
+echo "Palun sisestage kataloogi nimi millena sa seda salvestada tahad"
+read NAME
+cp -r /home /home/user/skriptimine/praks4a/test/
+tar -cvz /home/user/skriptimine/praks4a/test/
+echo "Sinu backup ülesanne on valmis. "
+#Skripti lõpp
